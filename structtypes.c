@@ -1,11 +1,17 @@
 #include <stdio.h>
 
+//defined outside a function therefore a global variable
+//You cannot reuse this struct type to create new variables later
+//creates two variables emp1 and emp2
 struct {
 	char *name;
 	int age;
 	int salary;
 } emp1, emp2;
 
+//defines inside a function manager()
+//local anonymous struct
+//variable name is manager
 int manager() {
 	struct {
 		char *name;
